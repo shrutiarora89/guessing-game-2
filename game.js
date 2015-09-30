@@ -34,7 +34,7 @@ alert('Your answer to question 2 was ' + question2.toUpperCase());
 alert('Your answer to question 3 was ' + question3.toUpperCase());
 
 if(gameInfo > 0) {
-  alert('Your scores are in ' + playerName + '... You got ' + gameInfo + ' out of 3 correct.');
+  alert('Your scores are in ' + playerName + '... You got ' + gameInfo + ' out of 3 correct, thanks for playing!');
 } else {
-  alert('Your scores are in ' + playerName + '... You got ' + gameInfo + ' out of 3 correct. Game over!!!!!!!!!!!!!!!!!!!!!!!!...');
+  alert('Your scores are in ' + playerName + '... You got ' + gameInfo + ' out of 3 correct. Game over!!!!!!!!!!!!!!!!!!!!!!!!... But Thanks for playing!');
 }
