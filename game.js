@@ -16,6 +16,7 @@ question1 = prompt(questions[0]);
   if (question1.toUpperCase() === answers[0] || question1.toUpperCase() === answers[1]) {
     gameInfo++;
     one.innerHTML = 'Correct! Nice job ' + playerName +', you are a student at Code Fellows.';
+    img1.innerHTML = '<img src="img/code-fellows-logo.png" width="200">';
   } else if (question1.toUpperCase() === answers[2] || question1.toUpperCase() === answers[3]) {
     one.innerHTML = 'Incorrect ' + playerName + ', you are a student at Code Fellows.';
   }
@@ -27,6 +28,7 @@ question2 = prompt(questions[1]);
   if (question2.toUpperCase() === answers[0] || question2.toUpperCase() === answers[1]) {
     gameInfo++;
     two.innerHTML = 'Correct ' + playerName + ', your memory is in good condition.';
+    img2.innerHTML = '<img src="img/1980.png" width="200">';
   } else if (question2.toUpperCase() === answers[2] || question2.toUpperCase() === answers[3]) {
     two.innerHTML = 'Incorrect ' + playerName + ', you were born in 1988, the 80\'s!';
   }
@@ -38,7 +40,9 @@ question3 = prompt(questions[2]);
   if (question3.toUpperCase() === answers[0] || question3.toUpperCase() === answers[1]) {
     gameInfo++;
     three.innerHTML = 'Correct! Yes ' + playerName + ', you do enjoy coding!';
-  } else if (question3.toUpperCase() === answers[2] || question3.toUpperCase() === answers[3]) {
+    img3.innerHTML = '<img src="img/javascript_logo.png" width="200">';
+  } else if (question3.toUpperCase() === answers[2] || question3.toUpperCase() === answers[3
+    ]) {
     three.innerHTML = 'Incorrect ' + playerName + ', I believe you enjoy coding...';
   }
 }
