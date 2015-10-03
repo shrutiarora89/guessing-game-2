@@ -7,35 +7,38 @@ var three = document.getElementById("three");
 var playerName = 'Alex';
 var gameInfo = 0;
 
-function ques1() {
-question1 = prompt('Are you a student at Code Fellows?');
+var answers = ['YES', 'Y', 'NO', 'N'];
+var questions = ['Are you a student at Code Fellows?','Were you born in the 80\'s?','Do you enjoy coding?'];
 
-  if (question1.toUpperCase() === 'Y' || question1.toUpperCase() === 'YES') {
+function ques1() {
+question1 = prompt(questions[0]);
+
+  if (question1.toUpperCase() === answers[0] || question1.toUpperCase() === answers[1]) {
     gameInfo++;
     one.innerHTML = 'Correct! Nice job ' + playerName +', you are a student at Code Fellows.';
-  } else if (question1.toUpperCase() === 'N' || question1.toUpperCase() === 'NO') {
+  } else if (question1.toUpperCase() === answers[2] || question1.toUpperCase() === answers[3]) {
     one.innerHTML = 'Incorrect ' + playerName + ', you are a student at Code Fellows.';
   }
 }
 
 function ques2() {
-question2 = prompt('Were you born in the 80\'s?');
+question2 = prompt(questions[1]);
 
-  if (question2.toUpperCase() === 'Y' || question2.toUpperCase() === 'YES') {
+  if (question2.toUpperCase() === answers[0] || question2.toUpperCase() === answers[1]) {
     gameInfo++;
     two.innerHTML = 'Correct ' + playerName + ', your memory is in good condition.';
-  } else if (question2.toUpperCase() === 'N' || question2.toUpperCase() === 'NO') {
+  } else if (question2.toUpperCase() === answers[2] || question2.toUpperCase() === answers[3]) {
     two.innerHTML = 'Incorrect ' + playerName + ', you were born in 1988, the 80\'s!';
   }
 }
 
 function ques3() {
-question3 = prompt('Do you enjoy coding?');
+question3 = prompt(questions[2]);
 
-  if (question3.toUpperCase() === 'Y' || question3.toUpperCase() === 'YES') {
+  if (question3.toUpperCase() === answers[0] || question3.toUpperCase() === answers[1]) {
     gameInfo++;
     three.innerHTML = 'Correct! Yes ' + playerName + ', you do enjoy coding!';
-  } else if (question3.toUpperCase() === 'N' || question3.toUpperCase() === 'NO') {
+  } else if (question3.toUpperCase() === answers[2] || question3.toUpperCase() === answers[3]) {
     three.innerHTML = 'Incorrect ' + playerName + ', I believe you enjoy coding...';
   }
 }
