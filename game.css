@@ -1,0 +1,13 @@
+body {
+  background-color: #FFFF4D;
+}
+
+.right {
+  color: green;
+  font-weight: bold;
+}
+
+.wrong {
+  color: red;
+  font-weight: bold;
+}
