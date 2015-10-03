@@ -1,3 +1,4 @@
+
 var question1;
 var question2;
 var question3;
@@ -51,9 +52,9 @@ ques1();
 ques2();
 ques3();
 
-alert('Your answer to question 1 was ' + question1.toUpperCase());
-alert('Your answer to question 2 was ' + question2.toUpperCase());
-alert('Your answer to question 3 was ' + question3.toUpperCase());
+// alert('Your answer to question 1 was ' + question1.toUpperCase());
+// alert('Your answer to question 2 was ' + question2.toUpperCase());
+// alert('Your answer to question 3 was ' + question3.toUpperCase());
 
 if (gameInfo > 0) {
   alert('Your scores are in ' + playerName + '... You got ' + gameInfo + ' out of 3 correct, thanks for playing!');
